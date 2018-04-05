@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80aaff"
+    tools:context="com.example.android.organdonation.ThirdOne"
+    tools:layout_editor_absoluteY="81dp">
+
+    <EditText
+        android:id="@+id/bgroup"
+        android:layout_width="137dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="BLOOD GROUP"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioLiver" />
+
+    <RadioButton
+        android:id="@+id/radioLiver"
+        android:layout_width="115dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="28dp"
+        android:text="LIVER"
+        app:layout_constraintEnd_toStartOf="@+id/radioPancreas"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/radioLungs"
+        app:layout_constraintTop_toBottomOf="@+id/radioKidneys" />
+
+    <RadioButton
+        android:id="@+id/radioPancreas"
+        android:layout_width="110dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="28dp"
+        android:text="PANCREAS"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/radioLiver"
+        app:layout_constraintTop_toBottomOf="@+id/radioHeart" />
+
+    <RadioButton
+        android:id="@+id/radioHeart"
+        android:layout_width="111dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="32dp"
+        android:text="HEART"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/radioKidneys"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioButton
+        android:id="@+id/radioKidneys"
+        android:layout_width="114dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="32dp"
+        android:text="KIDNEYS"
+        app:layout_constraintEnd_toStartOf="@+id/radioHeart"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/radioCornea"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioButton
+        android:id="@+id/radioCornea"
+        android:layout_width="121dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="32dp"
+        android:text="CORNEA"
+        app:layout_constraintEnd_toStartOf="@+id/radioKidneys"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioButton
+        android:id="@+id/radioLungs"
+        android:layout_width="119dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="28dp"
+        android:text="LUNGS"
+        app:layout_constraintEnd_toStartOf="@+id/radioLiver"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioCornea" />
+
+    <Button
+        android:id="@+id/secondNext"
+        style="@android:style/Widget.DeviceDefault.Button.Inset"
+        android:layout_width="133dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:text="NEXT"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox2"
+        app:layout_constraintVertical_bias="0.186" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="359dp"
+        android:layout_height="75dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="72dp"
+        android:text="YES! I wish to donate the selected organs to save or enhance someone's life through transplantation."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bgroup" />
+
+</android.support.constraint.ConstraintLayout>
